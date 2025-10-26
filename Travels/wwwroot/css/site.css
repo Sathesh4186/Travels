@@ -1,22 +1,43 @@
-html {
-  font-size: 14px;
+:root{
+  --brand:#0d6efd;
+  --muted:#6c757d;
+  --bg:#f8f9fa;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+html{font-size:16px;box-sizing:border-box}
+*,*::before,*::after{box-sizing:inherit}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#222;background:var(--bg);}
+
+/* Header */
+.site-header{background:#fff}
+.navbar-brand{font-size:1.25rem}
+
+/* Hero */
+.hero{background:linear-gradient(180deg, rgba(13,110,253,0.05), transparent 60%);padding-top:3rem;padding-bottom:3rem}
+.hero .display-5{color:#0b2b4a}
+
+/* Service icons */
+.service-icon{width:96px;height:auto}
+
+/* Cards */
+.card{border-radius:12px}
+.card .card-img-top{height:160px;object-fit:cover}
+
+/* Footer */
+.site-footer{font-size:0.95rem}
+
+/* Buttons */
+.btn-primary{background:var(--brand);border-color:var(--brand)}
+
+/* Responsive tweaks */
+@media (max-width:767.98px){
+  .service-icon{width:72px}
+  .hero{padding-top:2rem;padding-bottom:2rem}
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
+/* Accessibility focus */
+:focus{outline: none}
+.btn:focus, .form-control:focus{box-shadow:0 0 0 .2rem rgba(13,110,253,.15)}
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
-}
+/* Small utilities */
+.lead.text-muted{color:var(--muted)}

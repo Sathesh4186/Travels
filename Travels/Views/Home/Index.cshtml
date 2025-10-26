@@ -1,8 +1,140 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- Hero -->
+<section class="hero py-5">
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold">Plan Your Happy Travels</h1>
+            <p class="lead text-muted">Curated domestic and international tour packages — romance, adventure, family trips and more.</p>
+            <p>
+                <a class="btn btn-primary btn-lg me-2" href="#packages">View Packages</a>
+                <a class="btn btn-outline-secondary btn-lg" href="#services">Our Services</a>
+            </p>
+        </div>
+        <div class="col-lg-6 text-center">
+            <img src="~/images/hero-travel.jpg" alt="Couple at a scenic spot" class="img-fluid rounded shadow" asp-append-version="true" />
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-5">
+    <h2 class="h3 mb-4">Our Travel Services</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <img src="~/images/service-flight.svg" alt="Flights" class="mb-3 service-icon" asp-append-version="true" />
+                    <h5 class="card-title">Flights & Tickets</h5>
+                    <p class="text-muted">Best fares and end-to-end booking support.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <img src="~/images/service-hotel.svg" alt="Hotels" class="mb-3 service-icon" asp-append-version="true" />
+                    <h5 class="card-title">Hotels & Stays</h5>
+                    <p class="text-muted">Handpicked accommodations for every budget.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <img src="~/images/service-tour.svg" alt="Tours" class="mb-3 service-icon" asp-append-version="true" />
+                    <h5 class="card-title">Curated Tours</h5>
+                    <p class="text-muted">Local experiences crafted by experts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Packages -->
+<section id="packages" class="py-5">
+    <h2 class="h3 mb-4">Popular Packages</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="~/images/pkg-kerala.svg" class="card-img-top" alt="Kerala" asp-append-version="true" />
+                <div class="card-body">
+                    <h5 class="card-title">Kerala Getaway</h5>
+                    <p class="card-text text-muted">4 nights · Houseboat · Backwaters · Starting ₹23,999</p>
+                    <a class="btn btn-sm btn-outline-primary" href="#">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="~/images/pkg-bali.svg" class="card-img-top" alt="Bali" asp-append-version="true" />
+                <div class="card-body">
+                    <h5 class="card-title">Bali Escape</h5>
+                    <p class="card-text text-muted">5 nights · Beaches & Culture · Starting ₹19,999</p>
+                    <a class="btn btn-sm btn-outline-primary" href="#">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="~/images/pkg-goa.svg" class="card-img-top" alt="Goa" asp-append-version="true" />
+                <div class="card-body">
+                    <h5 class="card-title">Goa Weekend</h5>
+                    <p class="card-text text-muted">3 nights · Beaches & Nightlife · Starting ₹9,999</p>
+                    <a class="btn btn-sm btn-outline-primary" href="#">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials" class="py-5">
+    <h2 class="h3 mb-4">What Our Travelers Say</h2>
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="p-4 bg-light rounded shadow-sm">
+                <p class="mb-2">"Amazing experience — everything well planned!"</p>
+                <footer class="text-muted">— Priya, Chennai</footer>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="p-4 bg-light rounded shadow-sm">
+                <p class="mb-2">"Friendly staff and excellent support during the trip."</p>
+                <footer class="text-muted">— Akash, Bangalore</footer>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5">
+    <div class="row">
+        <div class="col-md-5">
+            <h2 class="h4">Contact Us</h2>
+            <p class="mb-1"><strong>Phone:</strong> +91 93840 00347</p>
+            <p><strong>Address:</strong> No.59, GN Chetty Rd, T Nagar, Chennai</p>
+        </div>
+        <div class="col-md-7">
+            <form class="row g-2" action="#" method="post">
+                <div class="col-md-6">
+                    <input class="form-control" type="text" name="name" placeholder="Your name" required />
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" type="email" name="email" placeholder="Email address" required />
+                </div>
+                <div class="col-12">
+                    <input class="form-control" type="tel" name="phone" placeholder="Phone (whatsapp preferred)" />
+                </div>
+                <div class="col-12">
+                    <textarea class="form-control" name="message" rows="4" placeholder="Tell us your travel plans"></textarea>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Send Enquiry</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

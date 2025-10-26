@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="titleHotel">
+  <title id="titleHotel">Hotels & Stays</title>
+  <rect width="100%" height="100%" fill="#fff8f2" />
+  <g transform="translate(60,40)">
+    <rect x="40" y="120" width="620" height="260" rx="18" fill="#ffd3b8" stroke="#ffb57a" stroke-width="4" />
+    <rect x="120" y="60" width="120" height="80" rx="10" fill="#fff" />
+    <rect x="320" y="60" width="120" height="80" rx="10" fill="#fff" />
+    <text x="50" y="420" font-family="Inter, Arial, sans-serif" font-size="36" fill="#5b3b1f">Hotels & Stays</text>
+  </g>
+</svg>

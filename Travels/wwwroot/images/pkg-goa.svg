@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="titleGoa">
+  <title id="titleGoa">Goa Weekend</title>
+  <rect width="100%" height="100%" fill="#fffaf6" />
+  <g transform="translate(60,40)">
+    <rect x="40" y="160" width="620" height="180" rx="10" fill="#ffe6d0" />
+    <path d="M100 260 Q200 200 300 260 T500 260" fill="#ffdcbc" />
+    <text x="50" y="420" font-family="Inter, Arial, sans-serif" font-size="34" fill="#9c3b00">Goa Weekend</text>
+  </g>
+</svg>
